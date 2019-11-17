@@ -1,0 +1,65 @@
+
+# git
+alias g='git'
+alias ga='git add -A'
+alias gb='git branch'
+alias gbd='git branch -D'
+alias gbr='git ls-remote --heads'
+alias gcam='git commit -am'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcob='git checkout -b' 
+alias gdif='git diff'
+alias gfm='git pull'
+alias gfr='git pull --rebase'
+alias gm='git merge'
+alias gp='git push'
+alias gpu='git push -u origin'
+alias grh='git reset --hard'
+alias gs='git stash' 
+alias gsa='git stash apply'
+alias gst='git status'
+
+# yarn
+alias y='yarn'
+alias ys='yarn start'
+alias yys='yarn && yarn start'
+alias ya='yarn add'
+
+# Own The Spot
+alias ots='cd ~/Desktop/OTS/Own-The-Spot'
+alias run-ots='teamocil --here ots'
+alias otsf='ots && cd Own-The-Spot'
+alias otsdb='ots && cd Database'
+alias otsapi='ots && cd API'
+
+alias run-otsf='otsf && yys'
+alias run-otsdb='otsdb && yys'
+alias run-otsapi='otsapi && node app.js'
+
+alias ots-dev-db='echo "Not sure what I should do here"'
+alias ots-prod-db='echo "Not sure what I should do here"'
+
+alias ssh-dev-notification='ssh -i own_the_spot_key_pair.pem ec2-user@ec2-3-93-231-214.compute-1.amazonaws.com'
+alias ssh-prod-notification='ssh -i own_the_spot_key_pair.pem ec2-user@ec2-54-173-178-92.compute-1.amazonaws.com'
+alias ssh-dev-api='ssh -i own_the_spot_key_pair.pem ec2-user@ec2-3-94-130-188.compute-1.amazonaws.com'
+alias ssh-prod-api='ssh -i own_the_spot_key_pair.pem ec2-user@ec2-3-86-181-201.compute-1.amazonaws.com'
+
+# Draftbit
+alias dbit='teamocil --here draftbit'
+alias jig='teamocil --here jigsaw'
+alias eng-draftbit='cd ~/Desktop/Draftbit/engineering'
+alias facie='teamocil --here facie'
+
+# UIUC
+alias ews='ssh baw2@linux.ews.illinois.edu'
+alias uiuc='cd ~/Desktop/UIUC'
+
+# Tmux
+alias t='tmux'
+alias teamo='teamocil --here'
+alias tks='killall tmux'
+alias teamo-edit='code ~/.teamocil'
+
+# Other
+alias zshrc='code ~/.zshrc'
