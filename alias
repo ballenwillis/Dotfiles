@@ -63,3 +63,7 @@ alias teamo-edit='code ~/.teamocil'
 
 # Other
 alias zshrc='code ~/.zshrc'
+
+# Nvim
+alias vim='nvim'
+alias vi='nvim'
