@@ -35,3 +35,6 @@ node_modules
 config/heroku
 config/configstore
 alfred
+
+# Other
+*/yarn/link/

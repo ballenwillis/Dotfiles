@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "diff-so-fancy": "^1.2.7",
+    "expo": "^35.0.1",
+    "expo-cli": "^3.9.1",
+    "fastlane": "^0.1.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.74.0",
+    "git-open": "^2.1.0",
+    "git-recent": "^1.1.1",
+    "jest": "^23.2.0",
+    "react-devtools": "^3.3.2",
+    "react-docgen": "^2.21.0",
+    "react-native-scripts": "^1.14.0",
+    "stylecleanup": "^1.3.0",
+    "svgo": "^1.3.0",
+    "typescript": "^3.5.3"
+  }
+}
