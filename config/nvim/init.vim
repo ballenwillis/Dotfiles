@@ -13,6 +13,20 @@ Plug 'sbdchd/neoformat'
 
 " ReasonML https://github.com/reasonml-editor/vim-reason-plus
 Plug 'reasonml-editor/vim-reason-plus'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+let g:LanguageClient_serverCommands = {
+    \ 'reason': ['~/.dotfiles/config/nvim/rls-macos/reason-language-server'],
+    \ }
+let g:deoplete#enable_at_startup = 1
+
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<cr>
+nnoremap <silent> gf :call LanguageClient#textDocument_formatting()<cr>
 
 " Handlebars & Mustache
 Plug 'juvenn/mustache.vim'
