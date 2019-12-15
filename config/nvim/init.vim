@@ -9,7 +9,35 @@ call functions#PlugLoad()
 Plug 'scrooloose/nerdtree'
 
 " Prettier
-Plug 'sbdchd/neoformat'
+" Plug 'sbdchd/neoformat'
+" let g:neoformat_javascript_prettier = {
+"            \ 'exe': 'prettier',
+"            \ }
+" let g:neoformat_enabled_javascript = ['prettier']
+" augroup fmt
+"  autocmd!
+"  autocmd BufWritePre * undojoin | Neoformat
+" augroup END
+
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/1.x',
+  \ 'for': [
+    \ 'javascript',
+    \ 'typescript',
+    \ 'css',
+    \ 'less',
+    \ 'scss',
+    \ 'json',
+    \ 'graphql',
+    \ 'markdown',
+    \ 'vue',
+    \ 'lua',
+    \ 'php',
+    \ 'python',
+    \ 'ruby',
+    \ 'html',
+    \ 'swift' ] }
 
 " ReasonML https://github.com/reasonml-editor/vim-reason-plus
 Plug 'reasonml-editor/vim-reason-plus'
@@ -21,7 +49,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 let g:LanguageClient_serverCommands = {
-    \ 'reason': ['~/.dotfiles/config/nvim/rls-macos/reason-language-server'],
+    \ 'reason': ['/Users/bwillis/bin/reason-language-server'],
     \ }
 let g:deoplete#enable_at_startup = 1
 

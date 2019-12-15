@@ -96,7 +96,7 @@ sudo chflags nohidden /Volumes
 defaults write com.apple.screensaver askForPassword -bool true
 
 # Set screensaver and add password delay
-defaults -currentHost write com.apple.screensaver idleTime -int 120
+defaults -currentHost write com.apple.screensaver idleTime -int 0
 defaults write com.apple.screensaver askForPasswordDelay   -int 60
 
 # Don’t animate opening applications from the Dock
